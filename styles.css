@@ -1,0 +1,12 @@
+.div-element {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: red;
+ }
+ .span-element {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: blue;
+ }
