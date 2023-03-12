@@ -5,3 +5,12 @@ body {
     background: black;
     color: grey
 }
+
+.container {
+    text-align: center;
+  }
+ 
+ .container pre {
+   display: inline-block;
+   text-align: center;
+  }
