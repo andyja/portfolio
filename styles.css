@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     background-color: #5CDB95;
     color: #05386B;
-    padding: 20px;
+    padding: 0px 20px;
   }
   
   .logo {
@@ -21,9 +21,7 @@ body {
 .github-logo path {
   height: 30px;
   fill: #05386B;
-}
-  
-  
+}  
   nav {
     display: flex;
     justify-content: center;
@@ -94,12 +92,18 @@ body {
   
   h3 {
     font-weight: lighter;
+    margin-bottom: 50px;
   }
   
   .portrait-round {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 30px auto
-  }
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: block; /* add this property */
+        margin: 30px auto 60px; /* add this property */
+      }
+      
+footer{
+    font-weight: lighter;
+}
