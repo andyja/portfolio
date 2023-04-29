@@ -1,10 +1,11 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color:#5CDB95;
+    background-color: #5CDB95;
     color: #edf5e1;
     text-align: center;
-}
-header {
+  }
+  
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,8 +15,15 @@ header {
   }
   
   .logo {
-    height: 150px; /* adjust to the size of your logo */
+    height: 150px;
   }
+  .linkedin-logo path,
+.github-logo path {
+  height: 30px;
+  fill: #05386B;
+}
+  
+  
   nav {
     display: flex;
     justify-content: center;
@@ -42,11 +50,42 @@ header {
     font-weight: 600;
     font-size: 1.2rem;
     text-transform: uppercase;
+    margin: 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    position: relative; /* Add this property */
   }
   
-  nav ul li a:hover {
-    border-top: 2px solid #EDF5E1;
-    border-bottom: 2px solid #EDF5E1;
+  nav ul li a img {
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  nav ul li a::before,
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #EDF5E1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Add this property */
+  }
+  
+  nav ul li a::before {
+    top: -5px;
+  }
+  
+  nav ul li a::after {
+    bottom: -5px;
+  }
+  
+  nav ul li:hover a::before,
+  nav ul li:hover a::after {
+    opacity: 1;
   }
   
   .emphasis {
@@ -56,33 +95,11 @@ header {
   h3 {
     font-weight: lighter;
   }
+  
   .portrait-round {
-    border-radius: 50%;
+    position: relative;
     width: 300px;
     height: 300px;
-    padding: 5px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .portrait-round:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    bottom: -10px;
-    left: -10px;
-    right: -10px;
     border-radius: 50%;
-    border: 10px solid transparent;
-    border-image: linear-gradient(to right, #05386B, #8EE4AF);
-    width: 100%;
-    height: 100%;
-    animation: rotate 10s linear infinite;
+    margin: 30px auto
   }
-  
-  @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
