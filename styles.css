@@ -108,10 +108,16 @@ nav ul li:hover a::after {
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        display: block; /* add this property */
-        margin: 30px auto 60px; /* add this property */
+        display: block; 
+        margin: 10px auto 60px;
       }
       
-footer{
+footer { 
     font-weight: lighter;
+}
+#about-me-para {
+  width: 80%;
+  margin: 0px auto;
+  font-weight: 500;
+
 }
